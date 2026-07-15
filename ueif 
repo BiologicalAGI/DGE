@@ -241,3 +241,44 @@ By following this approach, you can effectively set up the UEIF framework on Git
 
 Let me know if you'd like further guidance or help with specific areas!
 
+## Pathway Blueprint: Claim to Evidence
+
+Define this gate as a **verification transaction** rather than a semantic rewrite.
+
+### Transformation Formula
+
+`Claim (Proposed_State) + Verification_Context + Supporting_Data + Validation_Judgment -> Validated_Evidence`
+
+### 1) Level 0: Semantic Primitives
+
+- **Verification_Context:** How the claim is tested, including method, source class, protocol, and evaluator.
+- **Supporting_Data:** Logical, semantic, or physical artifacts gathered during validation.
+- **Validation_Judgment:** Explicit adjudication that the payload satisfies or fails declared acceptance criteria.
+
+### 2) Level 1: Type System Instantiation
+
+- `Claim` -> `Proposed_State`
+- `Verification_Context` -> `Validation_Procedure`
+- `Supporting_Data` -> `Evidence_Payload`
+- `Validation_Judgment` -> `Adjudication_Result`
+- Output -> `Validated_Evidence`
+
+### 3) Level 2: Transformation Gate Requirements
+
+All gate inputs must be present:
+
+- **Input A (Target):** The exact `Proposed_State` under test.
+- **Input B (Procedure):** The validating node/system and protocol used.
+- **Input C (Payload):** Concrete retrieved or produced proof artifacts.
+- **Input D (Judgment):** Pass/fail decision evaluated against explicit criteria.
+
+### 4) Execution Logic (Pass/Fail)
+
+- Missing **A**: reject as orphan validation (`0` state).
+- Missing **B**: downgrade output to untrusted artifact (no accountability).
+- Missing **C**: keep claim in unvalidated (`≈`) state (no proof payload).
+- Missing **D**: retain data as inert support material; cannot upgrade claim.
+- All inputs present and criteria satisfied: emit `Validated_Evidence` and attach lineage links to claim, procedure, node, and payload.
+
+This gate preserves anti-phantom guarantees: no evidence object may exist without a tested claim, accountable validator, traceable payload, and explicit adjudication.
+
