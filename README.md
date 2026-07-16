@@ -1,6 +1,6 @@
 # DGE
 
-**DGE** stands for **Holographic Digital General Existence**.
+This repository is publicly described as **Holographic Digital General Existence**.
 
 ## Status
 
