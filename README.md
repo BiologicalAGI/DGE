@@ -12,4 +12,6 @@ DGE belongs to the **UEIF exploration cluster**.
 
 ## Scope
 
-This repository currently serves as a minimal documentation and archival location. Its contents include historical UEIF-related material and SCOS draft documentation in proposed state.
+This repository currently serves as a minimal documentation and archival location. It appears to have been used for exploratory UEIF-related framework and architecture notes rather than as an active implementation repository.
+
+Its contents include historical UEIF-related material and SCOS draft documentation in proposed state.
